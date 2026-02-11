@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 
-//custom hook til brug i andre komponenter.
+
 export function useImages() {
-  // useState bruges til at gemme billederne i komponentens state
-  // images = arrayet med billedstier
-  // setImages = funktion til at opdatere images
   // <string[]> = TypeScript type: array af strings
   // [] = initial værdi (tom array, da vi ikke har hentet billeder endnu)
   const [images, setImages] = useState<string[]>([]);
